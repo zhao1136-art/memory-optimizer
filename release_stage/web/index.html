@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MemOptimizer - 内存优化工具</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">MemOptimizer <span class="tag">内存优化工具</span></div>
+  <div class="sys" id="sysbar"></div>
+  <div class="ctrls">
+    <span id="sampinfo"></span>
+    <button id="btnOneClick">一键优化</button>
+    <select id="reportFmt" title="报告导出格式">
+      <option value="html">HTML</option>
+      <option value="pdf">PDF</option>
+      <option value="xls">Excel</option>
+      <option value="csv">CSV</option>
+      <option value="json">JSON</option>
+    </select>
+    <button id="btnReport">导出报告</button>
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>泄漏检测</h2>
+    <div id="leakList" class="list"></div>
+  </section>
+
+  <section class="panel">
+    <h2>进程列表 <input id="search" placeholder="搜索进程名..."> <select id="sortSel">
+      <option value="private">按私有内存</option>
+      <option value="working">按工作集</option>
+      <option value="name">按名称</option>
+    </select></h2>
+    <table class="ptable">
+      <thead><tr><th>PID</th><th>名称</th><th>运行时</th><th>私有(MB)</th><th>工作集(MB)</th><th>峰值(MB)</th><th>CPU%</th><th>线程</th><th></th></tr></thead>
+      <tbody id="procsBody"></tbody>
+    </table>
+    <div id="procDetail"></div>
+  </section>
+
+  <section class="panel">
+    <h2>优化建议</h2>
+    <div id="sugList" class="list"></div>
+  </section>
+
+  <section class="two">
+    <div class="panel">
+      <h2>运行时分布</h2>
+      <div id="rtList" class="list"></div>
+    </div>
+    <div class="panel">
+      <h2>碎片分析</h2>
+      <div id="fragBox">
+        <label>进程 PID: <input id="fragPid" type="number" value="4"></label>
+        <button id="btnFrag">分析</button>
+        <div id="fragRes"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>受保护进程（优化时绝不干预）</h2>
+    <div id="protBox">
+      <label>进程名: <input id="protName" placeholder="如 python.exe" maxlength="96"></label>
+      <button id="btnProtAdd">加入保护</button>
+      <div class="sub">内置系统进程（如 svchost/lsass/explorer 等）自动受保护；这里的名单会被一键优化与单项建议一起跳过。</div>
+      <div id="protList" class="list"></div>
+    </div>
+  </section>
+</main>
+<footer>MemOptimizer · 纯 C 原生 · 低开销监控</footer>
+<script src="/app.js"></script>
+</body>
+</html>

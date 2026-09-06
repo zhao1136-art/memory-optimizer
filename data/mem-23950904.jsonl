@@ -1,0 +1,16 @@
+{"t":13433001837109,"sample":15,"avail_mb":195.676,"commit_mb":5098.594,"cache_mb":161.508,"top":[]}
+{"t":13433001867126,"sample":30,"avail_mb":639.855,"commit_mb":5191.129,"cache_mb":300.844,"top":[]}
+{"t":13433001897137,"sample":45,"avail_mb":464.094,"commit_mb":5258.047,"cache_mb":198.020,"top":[]}
+{"t":13433001927164,"sample":60,"avail_mb":457.949,"commit_mb":5282.328,"cache_mb":200.926,"top":[]}
+{"t":13433001957189,"sample":74,"avail_mb":390.711,"commit_mb":5317.355,"cache_mb":201.367,"top":[]}
+{"t":13433001987211,"sample":89,"avail_mb":540.961,"commit_mb":5209.879,"cache_mb":294.645,"top":[]}
+{"t":13433002017236,"sample":104,"avail_mb":684.168,"commit_mb":5021.887,"cache_mb":296.941,"top":[]}
+{"t":13433002047257,"sample":119,"avail_mb":642.164,"commit_mb":5073.598,"cache_mb":326.301,"top":[]}
+{"t":13433004308476,"sample":15,"avail_mb":1080.941,"commit_mb":4432.008,"cache_mb":590.055,"top":[]}
+{"t":13433004338495,"sample":30,"avail_mb":1116.352,"commit_mb":4387.426,"cache_mb":593.215,"top":[]}
+{"t":13433004368513,"sample":45,"avail_mb":1133.867,"commit_mb":4372.047,"cache_mb":598.781,"top":[]}
+{"t":13433004398536,"sample":60,"avail_mb":1128.707,"commit_mb":4375.418,"cache_mb":600.875,"top":[]}
+{"t":13433004428557,"sample":74,"avail_mb":1121.789,"commit_mb":4380.668,"cache_mb":601.949,"top":[]}
+{"t":13433004458581,"sample":89,"avail_mb":1125.438,"commit_mb":4370.973,"cache_mb":603.695,"top":[]}
+{"t":13433004554048,"sample":15,"avail_mb":1111.520,"commit_mb":4393.449,"cache_mb":612.770,"top":[]}
+{"t":13433005291591,"sample":15,"avail_mb":886.219,"commit_mb":4122.363,"cache_mb":937.918,"top":[]}
